@@ -1,7 +1,6 @@
 {
-  "name": "11-homework",
+  "name": "ls",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/gkwazy/friendFinder/issues"
   },
-  "homepage": "https://github.com/gkwazy/friendFinder#readme"
+  "homepage": "https://github.com/gkwazy/friendFinder#readme",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chosen": "0.0.2",
+    "express": "^4.16.3",
+    "path": "^0.12.7"
+  }
 }
