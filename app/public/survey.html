@@ -58,7 +58,7 @@
             </div>
         </div>
 
-        <!-- <h3>
+        <h3>
             <strong>Question 2</strong>
         </h3>
         <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
@@ -104,7 +104,7 @@
         </div>
 
 
-        <h3>
+        <!-- <h3>
             <strong>Question 4</strong>
         </h3>
         <h4>You rarely do something just out of sheer curiosity.</h4>
@@ -361,8 +361,8 @@
                     photo: $("#photo").val(),
                     scores: [
                         $("#q1").val(),
-                        // $("#q2").val(),
-                        // $("#q3").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
                         // $("#q4").val(),
                         // $("#q5").val(),
                         // $("#q6").val(),
@@ -376,7 +376,7 @@
                 $.post("/api/friends", userData, function (data) {
 
                     $("#match-name").text(data.name);
-                    $("#match-img").attr("src", data.photo);
+                    $("#match-img").attr("src", data.url).width(200).height(200);
 
                     $("#results-modal").modal("toggle");
                     console.log("modle should be opened");
