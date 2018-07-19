@@ -58,7 +58,7 @@
             </div>
         </div>
 
-        <h3>
+        <!-- <h3>
             <strong>Question 2</strong>
         </h3>
         <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
@@ -260,7 +260,7 @@
                 </div>
                 <ul class="chosen-results"></ul>
             </div>
-        </div>
+        </div> -->
 
         <br>
         <br>
@@ -354,21 +354,22 @@
 
             // If all required fields are filled
             if (validateForm()) {
+                console.log("validateFrom");
                 // Create an object for the user"s data
                 var userData = {
                     name: $("#name").val(),
                     photo: $("#photo").val(),
                     scores: [
                         $("#q1").val(),
-                        $("#q2").val(),
-                        $("#q3").val(),
-                        $("#q4").val(),
-                        $("#q5").val(),
-                        $("#q6").val(),
-                        $("#q7").val(),
-                        $("#q8").val(),
-                        $("#q9").val(),
-                        $("#q10").val()
+                        // $("#q2").val(),
+                        // $("#q3").val(),
+                        // $("#q4").val(),
+                        // $("#q5").val(),
+                        // $("#q6").val(),
+                        // $("#q7").val(),
+                        // $("#q8").val(),
+                        // $("#q9").val(),
+                        // $("#q10").val()
                     ]
                 };
 
@@ -378,6 +379,7 @@
                     $("#match-img").attr("src", data.photo);
 
                     $("#results-modal").modal("toggle");
+                    console.log("modle should be opened");
 
                 });
             } else {

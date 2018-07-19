@@ -1,2 +1,2 @@
 var friendsData = [];
-module.export = friendsData;
+module.exports = friendsData;
