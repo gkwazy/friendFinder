@@ -104,7 +104,7 @@
         </div>
 
 
-        <!-- <h3>
+        <h3>
             <strong>Question 4</strong>
         </h3>
         <h4>You rarely do something just out of sheer curiosity.</h4>
@@ -260,7 +260,7 @@
                 </div>
                 <ul class="chosen-results"></ul>
             </div>
-        </div> -->
+        </div>
 
         <br>
         <br>
@@ -359,18 +359,17 @@
                 var userData = {
                     name: $("#name").val(),
                     photo: $("#photo").val(),
-                    scores: [
-                        $("#q1").val(),
-                        $("#q2").val(),
-                        $("#q3").val(),
-                        // $("#q4").val(),
-                        // $("#q5").val(),
-                        // $("#q6").val(),
-                        // $("#q7").val(),
-                        // $("#q8").val(),
-                        // $("#q9").val(),
-                        // $("#q10").val()
-                    ]
+                    q1: $("#q1").val(),
+                    q2: $("#q2").val(),
+                    q3: $("#q3").val(),
+                    q4: $("#q4").val(),
+                    q5: $("#q5").val(),
+                    q6: $("#q6").val(),
+                    q7: $("#q7").val(),
+                    q8: $("#q8").val(),
+                    q9: $("#q9").val(),
+                    q10: $("#q10").val()
+
                 };
 
                 $.post("/api/friends", userData, function (data) {

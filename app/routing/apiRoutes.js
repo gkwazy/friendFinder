@@ -12,14 +12,14 @@ module.exports = function (app) {
         for (i = 0; i < friendsData.length - 1; i++) {
             var friendMeter = ((Math.abs(friendsData[i].q1 - friendsData[friendsData.length - 1].q1)) +
                 (Math.abs(friendsData[i].q2 - friendsData[friendsData.length - 1].q2)) +
-                (Math.abs(friendsData[i].q3 - friendsData[friendsData.length - 1].q3))
-                // (Math.abs(friendData[i].q4 - friendData[friendData.length].q4)) +
-                // (Math.abs(friendData[i].q5 - friendData[friendData.length].q5)) +
-                // (Math.abs(friendData[i].q6 - friendData[friendData.length].q6)) +
-                // (Math.abs(friendData[i].q7 - friendData[friendData.length].q7)) +
-                // (Math.abs(friendData[i].q8 - friendData[friendData.length].q8)) +
-                // (Math.abs(friendData[i].q9 - friendData[friendData.length].q9)) +
-                // (Math.abs(friendData[i].q10 - friendData[friendData.length].q10))
+                (Math.abs(friendsData[i].q3 - friendsData[friendsData.length - 1].q3)) +
+                (Math.abs(friendData[i].q4 - friendData[friendData.length].q4)) +
+                (Math.abs(friendData[i].q5 - friendData[friendData.length].q5)) +
+                (Math.abs(friendData[i].q6 - friendData[friendData.length].q6)) +
+                (Math.abs(friendData[i].q7 - friendData[friendData.length].q7)) +
+                (Math.abs(friendData[i].q8 - friendData[friendData.length].q8)) +
+                (Math.abs(friendData[i].q9 - friendData[friendData.length].q9)) +
+                (Math.abs(friendData[i].q10 - friendData[friendData.length].q10))
             );
 
             console.log("this is the total to the big thing: " + ((friendsData[friendsData.length - 1].q1)));
