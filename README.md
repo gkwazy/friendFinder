@@ -1,0 +1,2 @@
+# friendFinder
+A funny application to take information from the user and then best match then with some movie characters. This application was for me to get more comfortable with my applications having a server and having the backend and the frontend communitate. The frontend will take the answers that the user has answered and then run it through a very simple backend to see what character they best match with. 
